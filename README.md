@@ -8,7 +8,7 @@ A quick and simple solution to convert any embedded markdown text to html.
 <script src="markdownToHTML.js"></script>
 
 // or This to run it directly from github w/o downloading it
-<script src="https://raw.githubusercontent.com/MePerplexeus/Markdown2HTML/master/markdownToHTML.js"></script>
+<script src="https://meperplexeus.github.io/Markdown2HTML/markdownToHTML.js"></script>
 ```
 
 #### Call the function
