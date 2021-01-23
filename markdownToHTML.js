@@ -64,7 +64,7 @@ function HTMLtoMD(markdown) {
 
         }
         if (lines[line] == '') {
-            lines[line] = '<br>'
+            lines[line] = '<br><br>'
         }
     }
 //  Set UL
@@ -92,6 +92,6 @@ function HTMLtoMD(markdown) {
         }
 
     }
-    console.log(listLineIndex)
+    console.log(lines)
     return lines.join('') // Finally returns html for of the markdown text!
   }
