@@ -1,4 +1,4 @@
-function HTMLtoMD(markdown) {
+function MDtoHTML(markdown) {
 //  Reference Library
 //      ---------------------------------------
 //      ---------------------------------------
