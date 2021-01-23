@@ -63,6 +63,9 @@ function HTMLtoMD(markdown) {
             lines[line] = lines[line].replace(italics[0], italics[1][1]);
 
         }
+        if (lines[line] == '') {
+            lines[line] = '<br>'
+        }
     }
 //  Set UL
 //      ---------------------------------------
