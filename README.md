@@ -16,7 +16,12 @@ Lets say you have this markdown text in a certain div with the id markdown
 ```html
 <div id="markdown"># This is title
 ---
-**Hope** you have a **lot of *fun!*** </div>
+**Hope** you have a **lot of *fun!***
+- hello
+- this
+- is
+- a
+- list</div>
 ```
 Just go to the script tag call the function and use it to replace the same with the HTML thats given as the output of the function.
 ```html
