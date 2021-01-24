@@ -1,5 +1,5 @@
 # drawdown
-
+by Adam Leggett
 ---
 
 Tiny but reliable Markdown to HTML conversion in JavaScript
