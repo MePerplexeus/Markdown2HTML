@@ -2,6 +2,8 @@ function MDtoHTML(markdown) {
 //  Reference Library
 //      ---------------------------------------
 //      ---------------------------------------
+    var notp = ['####### ', '###### ', '##### ', '#### ', '### ', '## ', '# ', '---', '- ']
+    
     var headings = [
         ['####### ', ['<h7>', '</h7>']],
         ['###### ', ['<h6>', '</h6>']],
@@ -26,6 +28,14 @@ function MDtoHTML(markdown) {
 
 
     let lines = markdown.split(/\r\n|\n/);
+//  Set heading and bold tags
+//      ---------------------------------------
+//      ---------------------------------------
+    for (line in lines) {
+        if (!(lines[line].includes(notp[0])) && !(lines[line].includes(notp[1])) && !(lines[line].includes(notp[2])) && !(lines[line].includes(notp[3])) && !(lines[line].includes(notp[4])) && !(lines[line].includes(notp[5])) && !(lines[line].includes(notp[6])) && !(lines[line].includes(notp[7])) && !(lines[line].includes(notp[8]))) {
+            lines[line] = '<p>' + lines[line] + '</p>';
+        }
+    }
 //  Set heading and bold tags
 //      ---------------------------------------
 //      ---------------------------------------
@@ -62,9 +72,6 @@ function MDtoHTML(markdown) {
             i1 = true;
             lines[line] = lines[line].replace(italics[0], italics[1][1]);
 
-        }
-        if (lines[line] == '') {
-            lines[line] = '<br><br>'
         }
     }
 //  Set UL
