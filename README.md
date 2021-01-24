@@ -33,7 +33,7 @@ Just go to the script tag call the function and use it to replace the same with 
 ## That's all there is to it!
 
 > **NOTE:**
-> As of now, this only supports headings(h1 to h7), horizontal rule, bold and italics tags, asthat's all i required at the moment.
+> As of now, this only supports headings(h1 to h7), paragraph, horizontal rule, unordered list (supports only one list at the time tho), bold and italics tags, as that's all i required at the moment.
 ---
 
 ***Note:** I will not be updating this regularly. So feel free to fork and stuff this anytime. :)*
