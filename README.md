@@ -9,6 +9,8 @@ A quick and simple solution to convert any embedded markdown text to html.
 
 // or This to run it directly from github w/o downloading it
 <script src="https://meperplexeus.github.io/Markdown2HTML/markdownToHTML.js"></script>
+// or You can use drawdown by Adam Leggett
+<script src="https://meperplexeus.github.io/Markdown2HTML/drawdown/drawdown.js"></script>
 ```
 
 #### Call the function
@@ -28,17 +30,22 @@ Just go to the script tag call the function and use it to replace the same with 
 <script type="text/javascript">
   ...
   // if you are using JQuery, you can use this to replace the markdown div's content with HTML
-  $('#markdown').html(HTMLtoMD($('#markdown').html()))
-  
+  $('#markdown').html(HTMLtoMD($('#markdown').html()));
   // if you are using only javascript to do the same, then use this
   document.getElementById('markdown').innerHTML  = HTMLtoMD(document.getElementById('markdown').innerHTML);
+  
+  // for drawdown (Superior to Markdown2HTML)
+  // - using jQuery
+  $('#markdown').html(markdown($('#markdown').html()));
+  // - using Javascript
+  document.getElementById('markdown').innerHTML = markdown(document.getElementById('markdown').innerHTML);
   ...
 </script>
 ```
 ## That's all there is to it!
 
 > **NOTE:**
-> As of now, this only supports headings(h1 to h7), paragraph, horizontal rule, unordered list (supports only one list at the time tho), bold and italics tags, as that's all i required at the moment.
+> As of now, Mardown2HTML only supports headings(h1 to h7), paragraph, horizontal rule, unordered list (supports only one list at the time tho), bold and italics tags, as that's all i required at the moment. You can anyhow use drawdown which is much superior to Markdown2HTML which is just a practice project for me.
 ---
 
 ***Note:** I will not be updating this regularly. So feel free to fork and stuff this anytime. :)*
